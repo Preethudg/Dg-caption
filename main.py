@@ -4,10 +4,10 @@
 
 import pyrogram, os, asyncio
 
-app_id = int(os.environ.get("app_id", ""))
-api_hash = os.environ.get("api_hash", "")
-bot_token = os.environ.get("bot_token", "")
-custom_caption = os.environ.get("custom_caption", "`{file_name}`\n\n**Powered By - @VJ_Botz**") # Here You Can Give Anything, if You Want Real File Name Then Use {file_name}
+app_id = int(os.environ.get("app_id", "22237124"))
+api_hash = os.environ.get("api_hash", "3ed92051ab8064684d8b1a5babd79ec8")
+bot_token = os.environ.get("bot_token", "7579794242:AAEIPHd7b8OAfNuBfYsdSKsGNLWn2RepxDo")
+custom_caption = os.environ.get("custom_caption", "`{file_name}`\n\n**Powered By - DgBot**") # Here You Can Give Anything, if You Want Real File Name Then Use {file_name}
 
 AutoCaptionBotV1 = pyrogram.Client(name="AutoCaptionBotV1", api_id=app_id, api_hash=api_hash, bot_token=bot_token)
 
@@ -71,7 +71,7 @@ def get_file_details(update: pyrogram.types.Message):
 def start_buttons(bot, update):
     bot = bot.get_me()
     buttons = [[
-        pyrogram.types.InlineKeyboardButton("Updates", url="t.me/VJ_Botz"),
+        pyrogram.types.InlineKeyboardButton("Updates", url="https://t.me/DVITTALKANNADAMOVIE"),
         pyrogram.types.InlineKeyboardButton("About 🤠", callback_data="about")
     ],[
         pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"http://t.me/{bot.username}?startchannel=true")
